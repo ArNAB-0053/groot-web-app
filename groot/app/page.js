@@ -1,10 +1,9 @@
-import Body from '@/Components/Body'
+import Banner from '@/Components/Banner'
 
 const page = () => {
   return (
-    <div>
-      Plant
-      <Body/>
+    <div className='px-12 banner h-screen py-24'>
+      <Banner/>
     </div>
   )
 }
