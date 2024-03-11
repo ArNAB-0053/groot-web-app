@@ -12,8 +12,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} overflow-x-hidden bg-primary`} >
-        <Header />
+      <body className={`${inter.className} overflow-x-hidden bg-primary `} >
+        <header className="w-screen flex items-center justify-center">
+          <Header />
+        </header>
         {children}
       </body>
     </html>

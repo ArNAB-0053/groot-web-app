@@ -3,9 +3,9 @@ import React from 'react'
 
 const page = () => {
     return (
-        <div className="bg-gray-100 dark:bg-gray-850 py-24 px-28">
+        <div className="bg-primary dark:bg-gray-850 py-24 lg:px-28">
             <div className="px-4 py-6 md:px-6 ">
-                <div className="flex items-center space-x-4">
+                <div className="flex items-center space-x-4 flex-col lg:flex-row">
                     <Link className="flex space-x-2 items-center" href="#">
                         <FlagIcon className="h-6 w-6 rounded-lg bg-gray-200 p-1 dark:bg-gray-800" />
                         <span className="font-bold tracking-tighter">Home</span>
@@ -19,9 +19,9 @@ const page = () => {
                         <Link className="block transition-transform transform-gpu scale-100 hover:scale-105" href="#">
                             <img
                                 alt="Cover image"
-                                className="aspect-post object-cover"
+                                className="aspect-post object-cover w-full"
                                 height={300}
-                                src="/placeholder.svg"
+                                src="rust.jpg"
                                 width={500}
                             />
                             <div className="p-6">
@@ -39,12 +39,12 @@ const page = () => {
                     </div>
                     <div className="blogcontent border-t border-r rounded-lg overflow-hidden border-b dark:border-gray-800">
                         <Link className="grid gap-4 p-6 items-start border-b last:mb-0" href="#">
-                            <div className="aspect-[16/9] w-full overflow-hidden rounded-lg">
+                            <div className="aspect-post w-full overflow-hidden rounded-lg">
                                 <img
                                     alt="Cover image"
-                                    className="aspect-[16/9] object-cover"
+                                    className="aspect-post object-cover w-full"
                                     height={300}
-                                    src="/placeholder.svg"
+                                    src="Powdery_mildew.JPG"
                                     width={500}
                                 />
                             </div>
@@ -66,9 +66,9 @@ const page = () => {
                             <div className="aspect-[16/9] w-full overflow-hidden rounded-lg">
                                 <img
                                     alt="Cover image"
-                                    className="aspect-[16/9] object-cover"
+                                    className="aspect-[16/9] object-cover w-full"
                                     height={300}
-                                    src="/placeholder.svg"
+                                    src="leaf5.jpg"
                                     width={500}
                                 />
                             </div>
@@ -90,9 +90,9 @@ const page = () => {
                             <div className="aspect-[16/9] w-full overflow-hidden rounded-lg">
                                 <img
                                     alt="Cover image"
-                                    className="aspect-[16/9] object-cover"
+                                    className="aspect-[16/9] object-cover object-top w-full"
                                     height={300}
-                                    src="/placeholder.svg"
+                                    src="leaf6.png"
                                     width={500}
                                 />
                             </div>
@@ -111,10 +111,10 @@ const page = () => {
                     </div>
                 </div>
                 <div className="flex items-center justify-between w-full max-w-sm mx-auto">
-                    <Link className="flex items-center" href="#">
+                    <Link className="flex items-center justify-center bg-secondary px-5 py-2 mt-2 rounded-full text-primary w-36" href="#">
                         Previous
                     </Link>
-                    <Link className="flex items-center" href="#">
+                    <Link className="flex items-center justify-center bg-secondary px-5 py-2 mt-2 rounded-full text-primary w-36" href="#">
                         Next
                     </Link>
                 </div>

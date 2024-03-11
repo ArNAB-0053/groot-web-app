@@ -11,11 +11,12 @@ module.exports = {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        "banner-image": "url('/leaf4.jpg')",
       },
       colors: {
         primary: '#fffafa',
-        secondary: '#818962',
-        sidebar_color: '#012245',
+        secondary: '#292627',
+        logo: '#657c42',
         header_hover: '#006494',
       },
     },

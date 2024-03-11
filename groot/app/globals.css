@@ -1,3 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -12,10 +24,12 @@
     mix-blend-mode: multiply;
 }
 
-.banner {
+/* .banner {
     background-image: url('/leaf4.jpg');
     background-size: cover;
-}
+    background-attachment: fixed;
+    background-repeat: repeat;
+} */
 
 .loader {
     --dim: 3rem;

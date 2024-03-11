@@ -45,7 +45,7 @@ const page = () => {
     };
 
     return (
-        <div className='py-36 md:px-20 xl:px-32 gap-12 flex items-center justify-between flex-col lg:flex-row w-screen'>
+        <div className='py-36 px-12 md:px-20 xl:px-32 gap-12 flex items-center justify-between flex-col lg:flex-row w-screen'>
             <div className='w-full lg:w-1/3 h-full flex flex-col items-center justify-center'>
                 <h1 className="text-3xl font-bold text-center ">Upload an image</h1>
                 <h2 className='text-xl font-semibold text-center mb-4'>to detect plant diseases</h2>
@@ -70,6 +70,11 @@ const page = () => {
                 </Dropzone>
                 {previewUrl && <button onClick={handleSubmit} className='mt-6 px-10 py-3 text-white bg-black rounded-full'>Submit</button>}
             </div>
+            <div className='hidden lg:block mt-16 text-gray-600/60'>
+                <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                </svg>
+            </div>
             <div className='w-full lg:w-1/2 h-[36rem] flex items-center justify-center gap-3 flex-col'>
                 <h1 className='text-4xl font-bold text-center'>Result</h1>
                 <div className='w-full h-full bg-[#eaeaeac4] rounded-3xl relative'>
@@ -78,9 +83,24 @@ const page = () => {
                     </p>}
                     {!loading && Object.keys(diseaseInfo).length > 0 ? (
                         <div className='w-full h-full p-10 flex items-start justify-center flex-col gap-6 text-lg '>
-                            <h3><strong>Disease Name:</strong> {diseaseInfo.name}</h3>
-                            <p><strong>Symptoms:</strong> {diseaseInfo.symptoms}</p>
-                            <p><strong>Management:</strong> {diseaseInfo.management}</p>
+                            {diseaseInfo.name.includes('Healthy') ? (
+                                <>
+                                    <span className='w-full flex items-center justify-center'>
+                                        <img src="healthyStamp.jpg" alt="" className='w-32 mix-blend-multiply' />
+                                    </span>
+                                    <p className='text-2xl text-center text-[#47A62F]'>Great news! Your plant is healthy and free from diseases. Keep up the good care!</p>
+                                </>
+                            ) : (
+                                <>
+                                    <span className='w-full flex items-center justify-center'>
+                                        <img src="diseased.jpg" alt="" className='w-32 mix-blend-multiply' />
+                                    </span>
+                                    <h3><strong>Disease Name:</strong> {diseaseInfo.name}</h3>
+                                    <p><strong>Symptoms:</strong> {diseaseInfo.symptoms}</p>
+                                    <p><strong>Management:</strong> {diseaseInfo.management}</p>
+                                </>
+                            )}
+
                         </div>
                     ) : (
                         <div className='w-full h-full p-10 flex items-center justify-center text-zinc-600'>
