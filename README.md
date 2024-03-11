@@ -7,7 +7,7 @@ Welcome to the Plant Disease Detection System! This project leverages deep learn
 This system consists of:
 - **Model Training**: Utilizing TensorFlow and Keras, I trained a deep learning model with a remarkable 95% accuracy rate.
 - **API Integration**: Using Flask, I transformed the trained model into a RESTful API for seamless integration.
-- **Web Application**: Built with Next.js, the web app provides an intuitive interface for users to upload images and receive instant disease diagnosis.
+- **Web Application**: Built with Next.js and Tailwind CSS, the web app provides an intuitive interface for users to upload images and receive instant disease diagnosis.
 
 ## Key Features
 
@@ -33,3 +33,4 @@ To get started with the Plant Disease Detection System, follow these steps:
 - Keras
 - Flask
 - Next.js
+- Tailwind CSS
