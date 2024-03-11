@@ -1,4 +1,4 @@
-# Plant Disease Detection System 🌿
+# Plant Disease Detection System - Groot 🌿
 
 Welcome to the Plant Disease Detection System! This project leverages deep learning techniques to identify various diseases in plant leaves. 
 
