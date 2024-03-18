@@ -38,7 +38,3 @@ def predict_disease_from_image(image_path):
     model_prediction = predict_disease(cnn, class_name, image_path)
     return model_prediction
 
-if __name__ == "__main__":
-    image_path = 'test/test/healthyappleMy2.JPG'
-    model_prediction = predict_disease_from_image(image_path)
-    print(f"Disease Name: {model_prediction}")

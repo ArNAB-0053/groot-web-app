@@ -193,7 +193,7 @@ disease_info = {
 
 import json
 
-# Save the dictionary as a JSON file
+# Saving the dictionary as a JSON file
 with open('disease_info.json', 'w') as f:
     json.dump(disease_info, f)
 

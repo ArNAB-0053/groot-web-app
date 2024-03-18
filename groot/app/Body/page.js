@@ -93,7 +93,7 @@ const page = () => {
                             ) : (
                                 <>
                                     <span className='w-full flex items-center justify-center'>
-                                        <img src="diseased.jpg" alt="" className='w-32 mix-blend-multiply' />
+                                        <img src="diseased.jpg" alt="" className='w-32 mix-blend-multiply rotate-[10deg]' />
                                     </span>
                                     <h3><strong>Disease Name:</strong> {diseaseInfo.name}</h3>
                                     <p><strong>Symptoms:</strong> {diseaseInfo.symptoms}</p>

@@ -6,11 +6,11 @@ import json
 app = Flask(__name__)
 CORS(app)  # Enable CORS for all routes
 
-# Load disease_info.json
+# Loading disease_info.json
 with open('disease_info.json', 'r') as file:
     dataset_info = json.load(file)
 
-@app.route('/', methods=['GET','POST'])
+@app.route('/', methods=['POST'])
 def display_disease():
     if 'image' not in request.files:
         return jsonify({"error": "No image provided"})
@@ -22,13 +22,13 @@ def display_disease():
     image_path = 'temp.jpg'  # Temporary file path
     image_file.save(image_path)
 
-    # Perform disease detection
+    # Performing disease detection
     model_prediction = disease_detector.predict_disease_from_image(image_path)
 
-    # Retrieve information about the predicted disease
+    # Retrieving information about the predicted disease
     disease_info = dataset_info.get(model_prediction, {})
 
-    # Prepare response
+    # Preparing response
     result = {
         "disease": {
             "class": model_prediction,
