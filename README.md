@@ -11,9 +11,10 @@ This system consists of:
 
 ## Key Features
 
-- **Accurate Diagnosis**: The model is capable of identifying a wide range of plant diseases with impressive accuracy.
-- **Fast Performance**: The model achieves exceptional results, making it efficient and reliable.
-- **Comprehensive Insights**: Users receive detailed information about diagnosed diseases, including symptoms and management recommendations.
+- **Accurate Diagnosis**: It diagnoses variety of plant diseases with a high degree of accuracy.
+- **Health Assessment**: It tells whether the plant is healthy or not.
+- **Disease Identification**: Identifies specific diseases that are affecting the plant.
+- **Detailed insights**: In case the plant is not healthy, it provides information on the symptoms and management recommendations.
 
 ## Demo
 
