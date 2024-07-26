@@ -1,6 +1,6 @@
 # Plant Disease Detection System - Groot 🌿
 
-Welcome to the Plant Disease Detection System! This project leverages deep learning techniques to identify various diseases in plant leaves. 
+Welcome to the Groot. Groot is a plant leaf disease detection system based on deep learning. It has a training accuracy of 99% and a validation accuracy of 97%, using a model trained with TensorFlow and Keras. The trained model is integrated into a RESTful API with Flask. The system is then developed into a web application using Next.js and Tailwind CSS. 
 
 ## Overview
 
